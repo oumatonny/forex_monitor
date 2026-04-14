@@ -571,7 +571,7 @@ with st.sidebar:
     
     col1, col2 = st.columns(2)
     with col1:
-        if st.button("🔌 Connect MT5", width=True):
+        if st.button("🔌 Connect MT5", use_container_width=True):
             with st.spinner("Connecting to MT5..."):
                 mt5_data = init_mt5()
                 if mt5_data and mt5_data.connected:
